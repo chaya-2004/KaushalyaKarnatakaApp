@@ -1,6 +1,6 @@
 # Kaushalya Karnataka 🔧
 ### Local Skilled Worker Showcase App
-**Internship Major Project — Android Studio (Kotlin)**
+
 
 ---
 
