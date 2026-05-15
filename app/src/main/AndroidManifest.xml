@@ -40,5 +40,6 @@
         <activity android:name=".ui.activities.AddEditServiceActivity" android:exported="false" />
 
     </application>
+    
 
 </manifest>
