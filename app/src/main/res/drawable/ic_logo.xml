@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Orange circle background -->
+    <path android:fillColor="#E65100"
+        android:pathData="M60,60m-56,0a56,56 0,1 1,112 0a56,56 0,1 1,-112 0" />
+    <!-- Wrench tool -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M78,34 C74,30 68,29 63,31 L70,38 L66,42 L59,35 C57,40 58,46 62,50 L44,68 C42,70 42,73 44,75 C46,77 49,77 51,75 L69,57 C73,61 79,62 84,60 L77,53 L81,49 L88,56 C90,51 89,45 85,41 L78,34Z" />
+    <!-- Small star accent -->
+    <path android:fillColor="#FFC107"
+        android:pathData="M35,38 L37,43 L42,43 L38,46 L40,51 L35,48 L30,51 L32,46 L28,43 L33,43Z" />
+</vector>

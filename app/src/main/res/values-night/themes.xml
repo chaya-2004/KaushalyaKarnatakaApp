@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.KaushalyaKarnataka" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF8A65</item>
+        <item name="colorPrimaryVariant">#E65100</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#EFEFEF</item>
+        <item name="colorError">#CF6679</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    <style name="Theme.KaushalyaKarnataka.Splash" parent="Theme.KaushalyaKarnataka">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.KaushalyaKarnataka.NoActionBar" parent="Theme.KaushalyaKarnataka">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

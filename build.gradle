@@ -1,0 +1,19 @@
+// Top-level build file
+buildscript {
+    ext.kotlin_version = "1.8.0"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // AGP 7.4.2 + Gradle 7.6 + Java 11 — all compatible together
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
+        // Navigation Safe Args 2.5.3 is the last version compatible with Java 11
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

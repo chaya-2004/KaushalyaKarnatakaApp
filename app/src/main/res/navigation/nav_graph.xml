@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kaushalya.app.ui.fragments.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_addEditWorkerActivity"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.kaushalya.app.ui.fragments.SearchFragment"
+        android:label="Search" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kaushalya.app.ui.fragments.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.kaushalya.app.ui.fragments.FavoritesFragment"
+        android:label="Favourites" />
+
+</navigation>

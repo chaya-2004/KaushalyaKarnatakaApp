@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Kaushalya Karnataka</string>
+    <string name="tagline">ನಿಮ್ಮ ಊರಿನ ಕುಶಲಕರ್ಮಿ</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="hire_me">Hire Me</string>
+    <string name="add_review">Add Review</string>
+    <string name="call">Call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="maps">Maps</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="save_service">Save Service</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="top_rated_workers">Top Rated Workers</string>
+    <string name="all_workers">All Workers</string>
+    <string name="services_offered">Services Offered</string>
+    <string name="work_portfolio">Work Portfolio</string>
+    <string name="reviews">Reviews</string>
+    <string name="about_me">About Me</string>
+    <string name="years_experience">years of experience</string>
+    <string name="no_workers_found">No workers found</string>
+    <string name="request_sent">Request sent successfully!</string>
+    <string name="worker_type">Worker</string>
+    <string name="customer_type">Customer</string>
+    <string name="find_workers">Find skilled workers near you</string>
+    <string name="search_hint">Search workers, categories\u2026</string>
+</resources>

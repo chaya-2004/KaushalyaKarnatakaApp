@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivProfile"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_person_placeholder"
+                            android:contentDescription="Profile"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/on_surface"
+                                android:text="Worker Name" />
+
+                            <TextView
+                                android:id="@+id/tvCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/primary"
+                                android:text="Category" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="4dp">
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:isIndicator="true"
+                                    android:rating="0" />
+
+                                <TextView
+                                    android:id="@+id/tvRatingCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/on_surface_variant"
+                                    android:layout_marginStart="4dp"
+                                    android:text="(0 reviews)" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginVertical="12dp" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📍" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvAddress" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="14sp"
+                        android:textColor="@color/on_surface_variant" android:text="Address" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:id="@+id/tvExperience" android:textSize="14sp"
+                        android:textColor="@color/on_surface_variant" android:layout_marginTop="4dp"
+                        android:text="0 years of experience" />
+
+                    <TextView android:id="@+id/tvPhone" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="14sp"
+                        android:textColor="@color/on_surface_variant" android:layout_marginTop="4dp"
+                        android:text="Phone" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- About -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="About Me" android:textSize="16sp" android:textStyle="bold"
+                        android:textColor="@color/on_surface" android:layout_marginBottom="8dp" />
+                    <TextView android:id="@+id/tvAbout" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="14sp"
+                        android:textColor="@color/on_surface_variant" android:text="..." />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📞 Call"
+                    android:layout_marginEnd="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWhatsapp"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="💬 WhatsApp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMaps"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="🗺 Maps"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHireMe"
+                android:layout_width="match_parent" android:layout_height="56dp"
+                android:text="✅ Hire Me"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Owner Buttons -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Edit Profile"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:visibility="gone" android:layout_marginEnd="8dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Delete"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/error" android:textColor="@color/error"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Services -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="8dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Services Offered"
+                        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/on_background" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddService"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="+ Add" android:visibility="gone" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvServices"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:nestedScrollingEnabled="false" android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Portfolio -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="8dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Work Portfolio"
+                        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/on_background" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddPortfolio"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="+ Photo" android:visibility="gone" />
+                </LinearLayout>
+                <TextView android:id="@+id/tvNoPortfolio" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="No portfolio photos yet."
+                    android:textColor="@color/on_surface_variant" android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPortfolio"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="3"
+                    android:nestedScrollingEnabled="false" android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Reviews -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Reviews"
+                        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/on_background" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddReview"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="+ Review" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvReviews"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:nestedScrollingEnabled="false" android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

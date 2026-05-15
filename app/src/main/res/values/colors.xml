@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary">#E65100</color>
+    <color name="primary_dark">#BF360C</color>
+    <color name="primary_light">#FF8A65</color>
+    <color name="primary_container">#FFCCBC</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#1565C0</color>
+    <color name="secondary_container">#BBDEFB</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FFF8F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="on_background">#1A1A1A</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_surface_variant">#757575</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Status -->
+    <color name="error">#B00020</color>
+    <color name="success">#2E7D32</color>
+    <color name="warning">#F9A825</color>
+
+    <!-- Star Rating -->
+    <color name="star_color">#FFC107</color>
+</resources>
