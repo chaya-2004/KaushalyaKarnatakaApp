@@ -93,22 +93,5 @@ On first launch, 5 sample workers are inserted automatically:
 
 ---
 
-## 👨‍💻 Resume Description
-> Developed a full-featured Android application using Kotlin, MVVM architecture, and Room Database to digitally connect local skilled workers with customers through service listings, portfolio management, ratings, and search functionality.
 
----
-
-## 📝 Internship Evaluation Checklist
-- [x] Clean MVVM architecture
-- [x] Room Database with 5 entities
-- [x] Repository pattern
-- [x] Coroutines + Flow
-- [x] Navigation Component
-- [x] ViewBinding throughout
-- [x] Material Design 3 UI
-- [x] RecyclerView + DiffUtil
-- [x] Image picker (Activity Result API)
-- [x] Input validation
-- [x] Offline-first functionality
-- [x] Dark mode
 - [x] Regional language (Kannada)
