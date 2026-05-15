@@ -91,10 +91,10 @@ On first launch, 5 sample workers are inserted automatically:
 - Manjunath Painters (Rajajinagar)
 - Venkatesh Auto Service (Whitefield)
 
-  <img width="1280" height="2856" alt="Screenshot_20260515_200412" src="https://github.com/user-attachments/assets/14036fa5-4c4f-4550-b96e-73e6b61aabff" />
-
-
 ---
+Outputs
+<img width="280" height="856" alt="Screenshot_20260515_200511" src="https://github.com/user-attachments/assets/978d0b64-3d07-4006-99f0-3f8f43023322" />
+----
 
 
 - [x] Regional language (Kannada)
