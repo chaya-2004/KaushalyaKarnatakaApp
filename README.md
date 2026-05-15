@@ -92,8 +92,11 @@ On first launch, 5 sample workers are inserted automatically:
 - Venkatesh Auto Service (Whitefield)
 
 ---
-Outputs
-<img width="280" height="856" alt="Screenshot_20260515_200511" src="https://github.com/user-attachments/assets/978d0b64-3d07-4006-99f0-3f8f43023322" />
+
+<img width="280" height="556" alt="Screenshot_20260515_200511" src="https://github.com/user-attachments/assets/978d0b64-3d07-4006-99f0-3f8f43023322" />
+
+<img width="280" height="556" alt="Screenshot_20260515_200649" src="https://github.com/user-attachments/assets/ee53453f-1ce6-497c-b960-7640684e115f" />
+
 ----
 
 
