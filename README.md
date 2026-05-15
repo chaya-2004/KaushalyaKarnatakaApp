@@ -91,6 +91,9 @@ On first launch, 5 sample workers are inserted automatically:
 - Manjunath Painters (Rajajinagar)
 - Venkatesh Auto Service (Whitefield)
 
+  <img width="1280" height="2856" alt="Screenshot_20260515_200412" src="https://github.com/user-attachments/assets/14036fa5-4c4f-4550-b96e-73e6b61aabff" />
+
+
 ---
 
 
